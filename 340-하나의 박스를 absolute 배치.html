@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+
+    <title>340-하나의 박스를 absolute 배치</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        h1{
+            /* absolute의 진정한 의미
+
+                특정 기준점을 기준으로 지정한 좌표값 (left,top,right,bottom)에 요소를 배치
+                -> 기준점을 따로 지정하지 않으면 body가 기준
+                -> 기준점은 직계부모를 포함한 해당요소의 조상(태그구조 기준)에게만 설정 가능
+            */
+            position: absolute;
+            left: 900px;
+            top: 400px;
+
+
+            width: 200px;
+            height: 200px;
+            border: 5px solid blue;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+  <h1 class="box"></h1>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+
+    <title></title>
+    <style>
+        *{margin: 0; padding: 0;}
+        ul,li{list-style: none;}
+
+        h1,address{
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+        }
+
+        section{
+            margin: 0 auto;
+            width: 510px;
+            /* border: 1px solid red; */
+        }
+
+        nav{}
+
+        /* flex를 이용한 나열 */
+        nav>ul{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        nav>ul>li{
+            width: 120px;
+            border: 1px solid #000;
+            box-sizing: border-box;
+        }
+
+        /* float을 이용한 나열 
+        nav>ul:after{
+            display: block;
+            clear:both;
+            content:'';
+        }
+        nav>ul>li{
+            float: left;
+            margin-right: 10px;
+        }
+
+        nav>ul>li:last-child{margin-right: 0;}
+        */
+
+
+        nav>ul>li:nth-child(1){background-image: url(./images/mnu_01.png);}
+        nav>ul>li:nth-child(2){background-image: url(./images/mnu_02.png);}
+        nav>ul>li:nth-child(3){background-image: url(./images/mnu_03.png);}
+        nav>ul>li:nth-child(4){background-image: url(./images/mnu_04.png);}
+
+        nav>ul>li>a{
+            display: block;
+            height: 80px;
+            text-indent: -9999px;
+        }
+
+        section>p{
+            height: 300px;
+            margin-top: 10px;
+            text-indent: -9999px;
+            background-image: url(./images/독도-전시회.jpg);
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header><h1>독도전시관</h1></header>
+        <section>
+            <nav>
+                <ul>
+                    <li><a href="#">전시관 소개</a></li>
+                    <li><a href="#">전시 예약</a></li>
+                    <li><a href="#">관람 예약</a></li>
+                    <li><a href="#">열린 광장</a></li>
+                </ul>
+            </nav>
+            <p>선택에 따른 내용 출력란(컨텐츠)</p>
+        </section>
+        <footer><address>&copy; Korea Dokdo</address></footer>
+    </div>
+</body>
+</html>
